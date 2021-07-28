@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// reverting words in given text file.
 string revert( string s){
 
     char c = s[0];
