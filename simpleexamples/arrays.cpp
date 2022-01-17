@@ -33,6 +33,7 @@ void deleteItem(int index , int *arr)
 
 int main()
 {
+    
     int list[CAP] = { 12, 34, 45, 4, 8, 10, 16, 180, 182, 22 };
 
 

@@ -2,6 +2,7 @@
 // whether each member of the array has been assigned a value yet and, if not, recursively computes its value.
 
 #include <stdexcept>
+#include <iostream>
 
 int fact( int i ) noexcept (false) {
 
@@ -13,7 +14,7 @@ int fact( int i ) noexcept (false) {
   static int cache[17];
   
   if ( i < (sizeof(cache) / sizeof(int)) ) {
-      if ( 0 === cache[i] ) {
+      if ( 0 == cache[i] ) {
           cache[i] = i > 0 ? i * fact(i - 1) : 1;
        }
     return cache[i];   
@@ -27,8 +28,10 @@ int fact( int i ) noexcept (false) {
 int main() {
    int a = 5;
    
-   fact( a );
+   int b = fact( a );
    
+   std::cout << b << "\n";
+
    return 0;
 
 }
