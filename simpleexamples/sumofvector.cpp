@@ -3,6 +3,7 @@
 #include <numeric>
 #include <iostream>
 
+using namespace std; 
 // doing loop instead of using foor loop
 
 float sum_of_vector(const vector<float> &vec)
